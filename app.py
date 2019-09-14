@@ -7,7 +7,7 @@ from gtts import gTTS
 def textToSpeech(text, filename):
     mytext = str(text)
     language = 'hi'
-    myobj = gTTS(text=mytext, lang=language, slow=True)
+    myobj = gTTS(text=mytext, lang=language, slow=False)
     myobj.save(filename)
 
 
